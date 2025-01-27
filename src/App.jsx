@@ -5,6 +5,7 @@ import Users from './components/user/User.jsx'
 import Create from './components/user/Create.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/home/home.jsx'
+import Details from './components/user/Details.jsx'
 export default function App() {
   return (
     <>
@@ -14,8 +15,9 @@ export default function App() {
      <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/users' element={<Users />} />
+          <Route path='/users/:id' element={<Details />} />
           <Route path='/create' element={<Create />} />
-          <Route path='*' element={<h2>Page not cFound.</h2>} />
+          <Route path='*' element={<h2>Page not Found.</h2>} />
         </Routes>
      <Footer/>
      </div>
