@@ -2,9 +2,9 @@ import React from 'react'
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from './components/footer/Footer.jsx'
 import Users from './components/user/User.jsx'
-import Home from './components/home/Home.jsx'
 import Create from './components/user/Create.jsx'
 import { Route, Routes } from 'react-router-dom'
+import Home from './components/home/home.jsx'
 export default function App() {
   return (
     <>
